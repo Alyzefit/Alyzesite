@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Alyze</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>Painel Administrativo - Alyze</h1>
+    <a href="index.html" style="color:white;">Ver Catálogo</a>
+</header>
+<div class="container">
+    <form id="product-form">
+        <input type="text" id="name" placeholder="Nome do produto" required><br>
+        <input type="number" id="price" placeholder="Preço" required><br>
+        <input type="text" id="sizes" placeholder="Tamanhos disponíveis (ex: P,M,G)"><br>
+        <input type="text" id="colors" placeholder="Cores disponíveis"><br>
+        <textarea id="description" placeholder="Descrição do produto"></textarea><br>
+        <input type="text" id="images" placeholder="URLs das imagens separadas por vírgula"><br>
+        <button type="submit">Adicionar Produto</button>
+    </form>
+    <hr>
+    <h3>Produtos Cadastrados</h3>
+    <ul id="product-list-admin"></ul>
+</div>
+<script src="admin.js"></script>
+</body>
+</html>
